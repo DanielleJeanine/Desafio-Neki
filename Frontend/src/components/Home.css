@@ -1,0 +1,45 @@
+
+
+.modal-boleto {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-boleto-container {
+  color: #2c2c2c;
+  background-color: #fff;
+  margin: 15% auto;
+  width: 1000px;
+  border-radius: 20px 20px 10px 10px;
+}
+
+.modal-boleto-header {
+  background-color: navy; 
+  color: #fff;
+  padding: 15px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  border-radius: 10px 10px 0 0;
+}
+
+.modal-boleto-header h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.modal-boleto-content {
+  margin: 0;
+}
+
