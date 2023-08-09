@@ -24,7 +24,7 @@ public class Skill {
 	private String nome;
 
 	@Column(name = "level")
-	private Float level;
+	private String level;
 
 	@Column(name = "descricao")
 	private String descricao;
@@ -35,7 +35,7 @@ public class Skill {
 	@OneToMany(mappedBy = "id_skill")
 	private List<UserSkill> userSkill;
 
-public Skill( Long id, String nome, Float level, String descricao, String imagem_url, List<UserSkill> userSkill) {
+public Skill( Long id, String nome, String level, String descricao, String imagem_url, List<UserSkill> userSkill) {
 	super();
 	this.id = id;
 	this.nome = nome;
@@ -67,11 +67,11 @@ public void setNome(String nome) {
 	this.nome = nome;
 }
 
-public Float getLevel() {
+public String getLevel() {
 	return level;
 }
 
-public void setVersion(Float level) {
+public void setVersion(String level) {
 	this.level = level;
 }
 
